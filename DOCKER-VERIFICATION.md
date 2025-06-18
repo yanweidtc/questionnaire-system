@@ -78,7 +78,7 @@ docker compose logs admin-panel
 curl -I http://localhost:3000/api/health
 
 # 检查后端日志
-docker compose logs backend
+docker compose logs backend --tail=20
 
 # 预期输出应该包含：
 # - 应用启动信息
